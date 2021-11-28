@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="rus">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>Тестирование</title>
+	<link rel="stylesheet" href="css/normalize.css" />
+	<link rel="stylesheet" href="css/body.css" />
+	<link rel="stylesheet" href="css/style_quiz.css" />
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+	<!-- header -->
+	<div id="header">
+		<a href="index.html"><img id="logo" src="img/logo.png" alt="logo" /></a>
+
+		<div id="navbar">
+			<a class="navbtn" href="sun.html">Про Солнце</a>
+			<div class="dropdown">
+				<button class="dropbtn">≡ Планеты</button>
+				<div class="dropdown-content">
+					<a href="mercury.html">Меркурий</a>
+					<a href="venus.html">Венера</a>
+					<a href="earth.html">Земля</a>
+					<a href="mars.html">Марс</a>
+					<a href="jupiter.html">Юпитер</a>
+					<a href="saturn.html">Сатурн</a>
+					<a href="uranus.html">Уран</a>
+					<a href="neptune.html">Нептун</a>
+				</div>
+			</div>
+			<a class="navbtn" href="quiz.html">Тестирование</a>
+		</div>
+	</div>
+	<!-- content -->
+	<div id="main">
+		<div id="quizWindow">
+			<h1>Тестирование по солнечной системе</h1>
+			<div id="quiz"></div>
+			<div id="movebuttons">
+				<div class="button" id="prev"><a href="#">Предыдущий</a></div>
+				<div class="button" id="next"><a href="#">Следующий</a></div>
+			</div>
+			<form id="form" action="" onsubmit="ThankYou(this)">
+				<p>Имя пользователя</p>
+				<input type="text" name="name" minlength="5" placeholder="Минимум 5 символов" required /><span></span>
+				<p>Возраст</p>
+				<input type="number" name="age" placeholder="От 13 лет" min="13" required /><span></span>
+				<p>Почта</p>
+				<input type="email" name="mail" placeholder="Почта" required /><span></span><br />
+				<p><input type="submit" id="submitBTN" onclick="CompleteMSG()" value="Отправить" /></p>
+			</form>
+			<p id="thankyou"></p>
+			<a id="backBTN" href="index.html">На главную</a>
+		</div>
+		<script>
+			function ThankYou(form) {
+				event.preventDefault();
+				$('#form').hide();
+				item = document.getElementById('thankyou');
+				input = 'Ваш результат отправлен на ' + form.mail.value;
+				item.append(input);
+				$('#thankyou').fadeIn();
+				$('#backBTN').fadeIn();
+			}
+		</script>
+		<script src="js/jquery-3.6.0.min.js"></script>
+		<script src="js/quiz.js"></script>
+	</div>
+	<!-- footer -->
+	<div id="footer">
+		<div id="footer_1stcol">
+			<a id="scrollBack" onclick="ScrollPage()">Наверх</a>
+		</div>
+		<script>
+			function ScrollPage() {
+				window.scrollTo(0, 0);
+			}
+		</script>
+		<div id="footer_2stcol">
+			Изображения были взяты из интернет-площадкок
+		</div>
+	</div>
+</body>
+
+</html>

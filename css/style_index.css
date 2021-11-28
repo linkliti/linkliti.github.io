@@ -1,0 +1,93 @@
+area {
+	outline-color: red;
+}
+
+#main #title {
+	font-size: 3rem;
+	text-align: center;
+	margin-bottom: 1em;
+	font-weight: 700;
+}
+
+#main .text {
+	max-width: 1800px;
+	text-indent: 5rem;
+	font-size: 1.75rem;
+	line-height: 2.5rem;
+	text-align: justify;
+	padding: 5vh;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	margin: auto;
+}
+
+#solar {
+	max-width: 1536px;
+	width: 100%;
+	margin: 0 auto;
+	-webkit-box-shadow: 0 15px 10px 0.1vh #001b2b, 0 -15px 10px 0.1vh #001b2b;
+	box-shadow: 0 15px 10px 0.1vh #001b2b, 0 -15px 10px 0.1vh #001b2b;
+}
+
+#solarimg {
+	width: 100%;
+	margin-bottom: -10px;
+	margin-top: -10px;
+}
+
+#remind {
+	max-width: 1536px;
+	margin: 0 auto;
+	padding: 5vh;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+
+#remind_flex {
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+}
+
+#remind img {
+	width: 10rem;
+	height: 10rem;
+	margin-right: 4rem;
+}
+
+#remind_col2 {
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+#remind h1 {
+	text-align: left;
+}
+
+#remind button {
+	border: none;
+	font-size: 1.5rem;
+	color: #fff;
+	text-decoration: none;
+	margin: 10px;
+	margin-left: 0;
+	width: auto;
+	padding: 0.5vh;
+	text-align: center;
+	background-color: #1C3191;
+	cursor: pointer;
+}
+
+#remind button:hover {
+	background-color: #132264;
+}
