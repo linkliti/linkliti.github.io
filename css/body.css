@@ -93,6 +93,7 @@ body {
 
 #navbar .dropdown-content {
 	display: none;
+	z-index: 1;
 	margin-left: 5vh;
 	position: absolute;
 	background-color: #00335A;
