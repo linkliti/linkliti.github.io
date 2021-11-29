@@ -41,7 +41,7 @@ body {
 	margin-bottom: 1vh;
 	margin-left: 5vh;
 	cursor: pointer;
-	height: 10vh;
+	height: 8rem;
 	-webkit-text-size-adjust: none;
 	-moz-text-size-adjust: none;
 	-ms-text-size-adjust: none;
@@ -191,4 +191,14 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
 	background: #555;
+}
+
+@media screen and (max-device-width: 640px) {
+	html {
+		font-size: 16px;
+	}
+
+	#logo {
+		height: 6em;
+	}
 }

@@ -126,11 +126,11 @@ form select {
 }
 
 input:valid:not(input[type=checkbox])+span:after {
-	content: "✅";
+	content: " ✅";
 }
 
 input:invalid:not(input[type=checkbox])+span:after {
-	content: "⛔";
+	content: " ⛔";
 }
 
 input[type="radio"] {
@@ -182,4 +182,25 @@ input[type="radio"]:checked::before {
 input[type="radio"]:focus {
 	-webkit-box-shadow: 0 0 0 0.1em rgba(255, 255, 255, 0.445);
 	box-shadow: 0 0 0 0.1em rgba(255, 255, 255, 0.445);
+}
+
+@media screen and (max-device-width: 640px) {
+	#quizWindow {
+		max-width: 100%;
+	}
+
+	p, h2, h1, .button a {
+		font-size: 2rem;
+	}
+
+	ul li {
+		font-size: 2rem !important;
+		padding: 20px;
+		border-radius: 20px;
+		width: 40rem;
+	}
+
+	.button {
+		padding: 1vh;
+	}
 }

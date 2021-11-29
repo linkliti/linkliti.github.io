@@ -91,3 +91,10 @@ area {
 #remind button:hover {
 	background-color: #132264;
 }
+
+@media screen and (max-device-width: 640px) {
+	#main .text {
+		padding-left: 3vh;
+		padding-right: 3vh;
+	}
+}

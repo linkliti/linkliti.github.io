@@ -63,5 +63,22 @@ tr td:first-child {
 	line-height: 2.5rem;
 	font-size: 1.75rem;
 	text-align: justify;
-	margin: 5vh;
+	padding: 5vh;
+}
+
+@media screen and (max-device-width: 640px) {
+	#main .text {
+		padding-left: 3vh;
+		padding-right: 3vh;
+		padding-top: 1vh;
+	}
+
+	table {
+		font-size: 1.75rem;
+		float: none;
+	}
+
+	#planet {
+		padding-left: 6rem;
+	}
 }
